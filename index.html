@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+
+  <div class="header">
+    <h2>JS Calculator</h2>
+  </div>
+  <div class="calc z-depth-3">
+    <div class="inp">
+      <input disabled id="display" type="text" class="validate">
+    </div>
+    <div class="row">
+      <a type="button" value="C" id="keys" class="waves-effect waves-light btn clear" onClick='addToDisplay("c")'>C</a>
+      <a type="button" value="CE" id="keys" class="waves-effect waves-light btn clear" onClick='backspace()'>CE</a>
+      <a type="button" value="√" id="keys" class="waves-effect waves-light btn d" onClick='sqr()'>√</a>
+      <a type="button" value="/" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("/")'>/</a>
+    </div>
+    <div class="row">
+      <a type="button" value="7" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("7")'>7</a>
+      <a type="button" value="8" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("8")'>8</a>
+      <a type="button" value="9" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("9")'>9</a>
+      <a type="button" value="*" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("*")'>*</a>
+    </div>
+    <div class="row">
+      <a type="button" value="4" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("4")'>4</a>
+      <a type="button" value="5" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("5")'>5</a>
+      <a type="button" value="6" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("6")'>6</a>
+      <a type="button" value="-" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("-")'>-</a>
+    </div>
+    <div class="row">
+      <a type="button" value="1" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("1")'>1</a>
+      <a type="button" value="2" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("2")'>2</a>
+      <a type="button" value="3" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("3")'>3</a>
+      <a type="button" value="+" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("+")'>+</a>
+    </div>
+    <div class="row">
+      <a type="button" value="0" id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay("0")'>0</a>
+      <a type="button" value="." id="keys" class="waves-effect waves-light btn d" onClick='addToDisplay(".")'>.</a>
+      <a type="button" value="=" id="equal" class="waves-effect waves-light btn equal" onClick='result()'>=</a>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer">
+      <p>made by <a class="credits" href="https://codepen.io/AlexBlack88/" target="_blank"> Alex Black</a></p>
+    </div>
+  </footer>
+
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
